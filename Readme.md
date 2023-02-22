@@ -1,3 +1,4 @@
 # Object-Oriented-Programming
 
-Repo semester 2 - Matakuliah OOP
+Repo semester 2 Teknik Informatika - Matakuliah OOP
+
