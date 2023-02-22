@@ -1,2 +1,3 @@
-# OOP
-Repo semester 2 - Matakuliah OOP 
+# Object-Oriented-Programming
+
+Repo semester 2 - Matakuliah OOP
