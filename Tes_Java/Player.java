@@ -1,5 +1,6 @@
 package Tes_Java;
-public class tes{
+
+public class Player{
     
    
     String name;
