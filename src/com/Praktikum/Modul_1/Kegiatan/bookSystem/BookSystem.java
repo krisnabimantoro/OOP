@@ -17,6 +17,7 @@ public class BookSystem {
   Scanner input = new Scanner(System.in);
   static BookSystem user = new BookSystem();
 
+  //Payment
   public void doPayment(int noRoom) {
     System.out.println("=========================");
     System.out.print("Masukkan Tunai : ");
@@ -34,6 +35,7 @@ public class BookSystem {
     }
   }
 
+  //Room
   public void room() {
     System.out.println("Rayz Hotel");
     String x;
@@ -47,6 +49,7 @@ public class BookSystem {
     }
   }
 
+  //Book Room
   public void bookRoom() {
     int x, z = 1;
 
@@ -71,6 +74,7 @@ public class BookSystem {
     } while (z == 0);
   }
 
+  //Init
   public void init() {
     user.setNama(nama);
     user.setEmail(email);
@@ -78,6 +82,7 @@ public class BookSystem {
     user.setAlamat(alamat);
   }
 
+  //Display Person
   public void dispPerson() {
     System.out.println("=========================");
     System.out.println("Pembayaran Kamar");
@@ -87,6 +92,8 @@ public class BookSystem {
     user.getAlamat();
   }
 
+
+  //Setter & Getter
   public String getNama() {
     System.out.println("Nama : " + nama);
     return this.nama;
@@ -148,6 +155,8 @@ public class BookSystem {
     this.alamat = alamat;
   }
 
+
+  //Main
   public static void main(String[] args) {
     user.init();
     user.bookRoom();
