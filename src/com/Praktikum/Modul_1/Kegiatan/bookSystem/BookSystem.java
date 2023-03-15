@@ -17,11 +17,6 @@ public class BookSystem {
   Scanner input = new Scanner(System.in);
   static BookSystem user = new BookSystem();
 
-  public static void main(String[] args) {
-    user.init();
-    user.bookRoom();
-  }
-
   public void doPayment(int noRoom) {
     System.out.println("=========================");
     System.out.print("Masukkan Tunai : ");
@@ -122,7 +117,6 @@ public class BookSystem {
       return setEmail(email);
     }
     this.email = email;
-
     return email;
   }
 
@@ -152,5 +146,10 @@ public class BookSystem {
     System.out.print("Masukkan Alamat : ");
     alamat = input.nextLine();
     this.alamat = alamat;
+  }
+
+  public static void main(String[] args) {
+    user.init();
+    user.bookRoom();
   }
 }
