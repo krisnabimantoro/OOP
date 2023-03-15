@@ -92,7 +92,6 @@ public class BookSystem {
     user.getAlamat();
   }
 
-
   //Setter & Getter
   public String getNama() {
     System.out.println("Nama : " + nama);
@@ -102,7 +101,7 @@ public class BookSystem {
   public String setNama(String nama) {
     System.out.print("Masukkan Nama : ");
     nama = input.nextLine();
-    if (!nama.matches("[a-zA-Z_]+")) {
+    if (!nama.matches("[a-z A-Z]+")) {
       System.out.println("Invalid name");
       return setNama(nama);
     }
@@ -154,7 +153,6 @@ public class BookSystem {
     alamat = input.nextLine();
     this.alamat = alamat;
   }
-
 
   //Main
   public static void main(String[] args) {
