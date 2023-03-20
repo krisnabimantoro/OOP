@@ -21,19 +21,34 @@ public class BookSystem {
 
   //Payment
   public void doPayment(int noRoom) {
+    int uang;
     System.out.println("=========================");
     System.out.print("Masukkan Tunai : ");
-    input.nextInt();
 
-    System.out.println("Kamar berhasil dipesan");
+    uang = input.nextInt();
 
-    room[noRoom][0] = 0;
-    int ulang;
-    System.out.println("Ingin memesan kamar lagi? 0/1");
-    ulang = input.nextInt();
-    while (ulang == 1);
-    {
-      user.bookRoom();
+    if (uang > room[noRoom][2]) {
+      System.out.println("Kamar berhasil dipesan");
+      room[noRoom][0] = 0;
+      int ulang;
+      System.out.println("Ingin memesan kamar lagi? 0/1");
+      ulang = input.nextInt();
+
+      if (ulang == 0) {
+        user.bookRoom();
+      } else {
+        System.out.println("Terima kasih telah memesan kamar");
+      }
+    } else {
+      System.out.println("Uang tidak mencukupi");
+      System.out.println("Silahkan ulangi atau batal 0/1");
+      int x;
+      x = input.nextInt();
+      if (x == 0) {
+        user.doPayment(noRoom);
+      } else {
+        System.out.println("Anda membatalkan pesanan");
+      }
     }
   }
 
@@ -158,6 +173,7 @@ public class BookSystem {
 
   //Main
   public static void main(String[] args) {
+    System.out.println("Registration");
     user.init();
     user.bookRoom();
   }
