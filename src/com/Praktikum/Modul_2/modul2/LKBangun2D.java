@@ -1,18 +1,21 @@
 package com.Praktikum.Modul_2.modul2;
 
+import java.util.*;
+
 public class LKBangun2D {
     protected double luas;
     protected double keliling;
+    protected static Scanner sc = new Scanner(System.in);
 
-    protected void infoBangun() {
+    protected void infoBangun(double a) {
         
     }
 
-    protected void hitungKeliling(double sisi) {
+    protected void hitungKeliling(double a) {
         
     }
 
-    protected void hitungLuas() {
+    protected void hitungLuas(double a) {
         
     }
 

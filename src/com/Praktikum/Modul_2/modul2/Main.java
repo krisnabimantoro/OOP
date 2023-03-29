@@ -1,6 +1,6 @@
 package com.Praktikum.Modul_2.modul2;
 
-//import com.Praktikum.Modul_2.modul2.bangun2d.*;
+import com.Praktikum.Modul_2.modul2.bangun2d.*;
 import java.util.*;
 
 public class Main {
@@ -47,7 +47,7 @@ public class Main {
     int hitung;
 
     // BelahKetupat ketupat = new BelahKetupat();
-    // Persegi persegi = new Persegi();
+     Persegi persegi = new Persegi();
     // PersegiPanjang panjang = new PersegiPanjang();
     // Segitiga segitiga = new Segitiga();
     // Lingkaran lingkaran = new Lingkaran();
@@ -66,7 +66,7 @@ public class Main {
     hitung = sc.nextInt();
     switch (hitung) {
       case 1:
-     
+     persegi.main(null);
         break;
       default:
         break;
