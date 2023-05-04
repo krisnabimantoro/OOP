@@ -5,9 +5,11 @@ import java.util.*;
 public class Modul3Practice {
 
   private double value;
+  
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
+    
     Modul3Practice mainObj = new Modul3Practice();
     converter conv = new converter();
 
@@ -21,7 +23,9 @@ public class Modul3Practice {
     x = sc.nextInt();
 
     System.out.print("Masukkan Yard : ");
-    mainObj.setValue(mainObj.value = sc.nextInt(), null);
+
+
+    mainObj.setValue(mainObj.value = sc.nextInt());
     if (x == 1) {
       System.out.println(
         "Hasil konversi = " + conv.setValueToM(mainObj.getValue())
@@ -39,7 +43,7 @@ public class Modul3Practice {
         "Hasil konversi = " + conv.setValueToMiles(mainObj.getValue())
       );
     }
-
+    
     sc.close();
   }
 
@@ -47,7 +51,7 @@ public class Modul3Practice {
     return this.value;
   }
 
-  public void setValue(double value, String params) {
+  public void setValue(double value) {
     this.value = value;
   }
 }
